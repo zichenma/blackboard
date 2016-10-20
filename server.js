@@ -14,7 +14,13 @@ var index = require('./routes/index');
 var api = require('./routes/api');
 var authenticate = require('./routes/authenticate')(passport);
 var mongoose = require('mongoose');                         //add for Mongo support
-mongoose.connect('mongodb://localhost:27017/courseManager');              //connect to Mongo
+mongoose.connect(process.env.MONGOLAB_URL ||'mongodb://localhost:27017/courseManager', function (err) {
+    if(err){
+        console.error(err)
+    }else {
+        console.log("connected");
+    }
+});              //connect to Mongo
 var app = express();
 
 // view engine setup
