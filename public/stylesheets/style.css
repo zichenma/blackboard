@@ -1,0 +1,57 @@
+body {
+	padding-top:70px;
+	width: 100%;
+    height: 100%;
+	width: 100%;
+    height: 100%;
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+a {
+	color: #00B7FF;
+}
+th, td{
+	text-align: center;
+}
+
+.submit-btn {
+	margin: 10px 0 10px 0;
+}
+
+.post {
+	padding: 10px;
+	margin-bottom: 5px;
+	border-radius: 5px;
+}
+
+.odd {
+	background-color: #f2f9ff;
+	
+}
+.even {
+	background-color: #eceff3;
+}
+
+.form-auth {
+	max-width: 330px;
+	padding: 5px;
+	margin: 0 auto;
+}
+
+
+#c_name_input{
+	margin-top:5px;
+	width: 60%;
+}
+#c_id_input{
+	margin-top:5px;
+	width:20%;
+}
+#id_input{
+	margin: 0 auto;
+	width: 100px;
+}
+#course_input{
+	margin: 0 auto;
+	width:260px;
+}
