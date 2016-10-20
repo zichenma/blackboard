@@ -14,7 +14,7 @@ var index = require('./routes/index');
 var api = require('./routes/api');
 var authenticate = require('./routes/authenticate')(passport);
 var mongoose = require('mongoose');                         //add for Mongo support
-mongoose.connect(process.env.MONGOLAB_URI ||'mongodb://localhost:27017/courseManager', function (err) {
+mongoose.connect(process.env.MONGODB_URI ||'mongodb://localhost:27017/courseManager', function (err) {
     if(err){
         console.error(err)
     }else {
